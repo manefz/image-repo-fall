@@ -33,7 +33,8 @@ service layer,domain layer and persistence layer. This architecture presents the
 
 ## Usage of Deployed app
 
-Simple direct message me for the deployed app URL and I will give it to you. 
+The app is running on https://img-repo-manefz.herokuapp.com/. 
+Please consult the [api documentation](https://github.com/manefz/image_repo/blob/master/API-documentation.md) 
 
 ## Usage of Local app 
 

@@ -1,8 +1,7 @@
 ## Application and features 
 
 This Project built in Java is a simple REST API that provides the feature of an image repository.
-For the moment two versions exist : v1 which stores the images on AWS S3, and v0 which stores the images in memory.
-Please note for v0, the images are not persisted outside of the lifetime of the API.
+For the moment two versions exist : v1 which stores the images on AWS S3
 
 These versions are accessible through the two branches available on this repository. 
 
@@ -45,7 +44,6 @@ Before running the app locally a few steps are required to setup S3 (v1).
 - Java 1.8.*
 - Maven 3.8.*
 
-For v1 ONLY :
 
 An AWS S3 account, with an IAM user. You need to save your two keys ( aws_access_key_id, aws_secret_access_key)
 in a file with the following name : s3_config.properties
@@ -104,25 +102,3 @@ Please consult the [api documentation](https://github.com/manefz/image_repo/blob
 - Throttle requests and limit amount of uploads per user (S3 free tier is not unlimited!)
 - More unit tests
 - Implement a basic UI to make this API easier to test manually
-
-
-## Obsolete version (v0)
-
-This version offers the same features as the version on master branch, however the images are stored
-locally instead of being stored and managed by S3. They are not persisted once you shut down the server.
-
-Also the software requirements are the same, you dont need a s3_config.properties files for this version. 
-
-1. checkout to the branch that contains the old version
-
-```git checkout v0```
-
-2. In the root directory, run 
-```
-mvn clean install
-```
-
-3. In the root directory, run 
-```
-mvn clean compile exec:java
-```

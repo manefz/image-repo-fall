@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "c22443de-ea5e-4ba1-801d-c01f2d8d8309",
+		"name": "POST-example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post image - DONT FORGET TO ADD A FILE!!",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8282/images",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"images"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
